@@ -14,32 +14,39 @@ This page exists to satisfy the App Store Connect URL fields:
 
 Static HTML/CSS, no build step. Deployed to Cloudflare Pages on push to `main`.
 
-## Before submitting to Apple
+## What the page currently claims
 
-Fill in every `[BRACKETED]` placeholder in `index.html`:
+The copy is written against this architecture. If any of it changes, the page
+has to change with it.
 
-- The hero headline and lede
-- The three feature bullets
-- `[hosting and authentication provider]` and `[analytics and crash reporting provider]`
-  in the privacy policy
-- The **AI features** paragraph in the privacy policy: say whether inference runs
-  on device or through a third-party model provider, and name the provider if so
+| Item | Provider | Notes |
+| --- | --- | --- |
+| AI inference | On-device, Apple Foundation Models | No cloud model. Coaching content never transmitted. |
+| Hosting / backend | Cloud Firestore | Account backup and restore; trainer sharing only when the user links one. |
+| Auth | Firebase Authentication | Email/password or Sign in with Apple. |
+| Analytics | TelemetryDeck (opt-in), Apple MetricKit | No personal identifiers; diagnostics only. |
+| Food lookups | USDA FoodData Central, Open Food Facts | Search text and barcodes only; no personal or health data. |
 
-If any user data is sent to a model provider, the "We do not share Apple Health
-data with third parties" bullet has to be narrowed to match. Do not ship those
-two claims in contradiction.
+The page states a device floor of **iPhone 15 Pro or later**, which follows from
+using Apple Intelligence rather than a bundled model. If the stack moves back to
+MLX + Llama 3.2 3B, the floor returns to A15, and the page needs updating along
+with the "Built with Llama" attribution and a `NOTICE.txt`.
 
-Also confirm the privacy policy matches what the app actually does. It currently
-claims: email/password accounts, Apple Health read and write with explicit
-permission, anonymized analytics and crash reporting, no data sales, no health
-data shared with third parties, and account deletion within 30 days.
+## Still to do before submission
 
-The support FAQ describes an in-app **Settings > Account > Delete Account** path.
-Apple requires an in-app account deletion path (guideline 5.1.1(v)), so that
-screen needs to exist and match the wording.
-
-The brand color is one CSS variable: `--accent` / `--accent-strong` in
-`styles.css`.
+- **Account deletion must exist in-app** at `Settings > Account > Delete Account`.
+  Apple guideline 5.1.1(v) requires it, the FAQ documents that exact path, and
+  CCPA/GDPR deletion rights are real now that accounts exist. Local wipe is not
+  enough.
+- **Trainer unlink must exist** at `Settings > Trainer > Unlink`, as the FAQ says.
+- **HealthKit consent screen.** Health-derived data reaching Firestore needs
+  explicit consent, separate from the HealthKit permission itself, with a stated
+  health-management purpose (App Review 5.1.3). It must not go to iCloud.
+- **Confirm the FitnessAI name is available** in App Store Connect. There may be
+  an existing iOS app using it.
+- **Cloudflare bot protection** currently challenges automated clients on this
+  zone (`Cf-Mitigated: challenge`). Fine for humans; consider allowlisting in
+  case Apple's review tooling fetches the Support URL.
 
 ## Local preview
 
