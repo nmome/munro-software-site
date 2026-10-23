@@ -11,6 +11,10 @@ The site for **Munro Software Company LLC** at
   brain note `projects/money/site-copy.md`. It names no price: the quote is
   sized on the call. Showing "From $650" there is Nathan's call. Refund and
   terms wording is not repeated, the page links to the homepage for it.
+- `templates/index.html`: the Lead Catch template page, served at
+  `https://munrosoftwarecompany.com/templates/`. Copy comes from the brain
+  notes `projects/money/template-listing.md` and `paid-template.md`. No price
+  or buy link until the Gumroad listing is live: a comment marks the spot.
 - `fitnessai/index.html`: the FitnessAI support and privacy page, for the
   App Store Connect URL fields:
 
