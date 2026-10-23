@@ -20,130 +20,197 @@
     }
   </script>
 </head>
-<body>
-  <header class="topbar">
-    <a class="wordmark" href="#top">
-      <span class="mark" aria-hidden="true">
-        <svg viewBox="0 0 64 64" width="26" height="26"><path d="M35 9 L17 35 h11 l-3 21 19-28 H32 z" fill="currentColor"/></svg>
-      </span>
-      <span class="name">Munro Software</span>
-    </a>
-    <nav class="nav">
-      <a href="#services">Services</a>
-      <a href="/lead-follow-up/">Lead follow-up</a>
-      <a href="#refunds">Refunds</a>
-      <a href="#contact">Contact</a>
-    </nav>
+<body class="home">
+  <header class="site-header">
+    <div class="topbar">
+      <a class="wordmark" href="#top">
+        <img src="brand/v2/munro-logo-400.png" alt="" width="36" height="36" />
+        <span class="name">Munro Software</span>
+      </a>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a class="nav-hide" href="#how">How it works</a>
+        <a class="nav-hide" href="#refunds">Refunds</a>
+        <a class="nav-cta" href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <main id="top">
-    <section class="hero">
-      <p class="status">Munro Software Company LLC &middot; Arizona</p>
-      <h1>Every lead gets an answer, even when you are on a job.</h1>
-      <p class="lede">
-        We set up simple automations for small service businesses, so a web
-        form or a missed call gets a reply in minutes and a follow-up a few
-        days later. It runs on the tools you already use.
-      </p>
+    <section class="home-hero">
+      <div class="wrap">
+        <p class="status">Munro Software Company LLC &middot; Arizona</p>
+        <h1>Every lead gets an answer, even when you are on a job.</h1>
+        <p class="lede">
+          We set up simple automations for small service businesses, so a web
+          form or a missed call gets a reply in minutes and a follow-up a few
+          days later. It runs on the tools you already use.
+        </p>
+        <div class="actions">
+          <a class="btn" href="#contact">Get in touch</a>
+          <a class="btn btn-ghost" href="#services">See what we sell</a>
+        </div>
+      </div>
     </section>
 
-    <section class="block" id="services">
-      <h2>What we sell</h2>
-      <ul class="features">
-        <li>
-          <strong>Lead follow-up setup.</strong>
-          We build an instant reply to new web form and missed-call leads, a
-          follow-up three days later, and one Google Sheet that tracks every
-          lead. Each project gets one fixed quote before any work starts.
-          <a href="/lead-follow-up/">See how it works</a>.
-        </li>
-        <li>
-          <strong>Monthly upkeep, if you want it.</strong>
-          An optional monthly plan that keeps the automation running and fixes
-          it when one of your tools changes. You can cancel at any time.
-        </li>
-        <li>
-          <strong>Workflow templates.</strong>
-          Ready-made n8n and Make workflows, such as our
-          <a href="/templates/">Lead Catch template</a>,
-          sold as one-time digital downloads with setup instructions.
-        </li>
-        <li>
-          <strong>Apps.</strong>
-          We also build software of our own, starting with
-          <a href="/fitnessai/">FitnessAI</a>, an on-device fitness coach for
-          iPhone.
-        </li>
-      </ul>
+    <section class="section section-soft" id="services">
+      <div class="wrap">
+        <p class="eyebrow">What we sell</p>
+        <h2>Services, templates and apps</h2>
+        <p class="intro">
+          Pick the setup done for you, build it yourself from a template, or
+          try the software we make for ourselves.
+        </p>
+        <div class="cards">
+          <article class="card">
+            <p class="tag">Service</p>
+            <h3>Lead follow-up setup</h3>
+            <p>
+              We build an instant reply to new web form and missed-call leads, a
+              follow-up three days later, and one Google Sheet that tracks every
+              lead. Each project gets one fixed quote before any work starts.
+            </p>
+            <p>
+              Optional monthly upkeep keeps the automation running and fixes it
+              when one of your tools changes. You can cancel at any time.
+            </p>
+            <a class="more" href="/lead-follow-up/">See how it works &rarr;</a>
+          </article>
+          <article class="card">
+            <p class="tag">Template</p>
+            <h3>Lead Catch for n8n and Make</h3>
+            <p>
+              Ready-made n8n and Make workflows, sold as one-time digital
+              downloads with setup instructions. Lead Catch answers new leads
+              and logs them for you.
+            </p>
+            <a class="more" href="/templates/">View the templates &rarr;</a>
+          </article>
+          <article class="card">
+            <p class="tag">App</p>
+            <h3>FitnessAI</h3>
+            <p>
+              We also build software of our own, starting with FitnessAI, an
+              on-device fitness coach for iPhone.
+            </p>
+            <a class="more" href="/fitnessai/">About FitnessAI &rarr;</a>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section class="block" id="payment">
-      <h2>How payment works</h2>
-      <p>
-        Setup work is paid in two parts. Half of the quoted price is due before
-        we start building, and the rest is due when the automation is handed
-        over and working. Monthly upkeep is billed each month. Templates are
-        paid once at checkout. All prices are in US dollars, and card payments
-        are processed by Stripe.
-      </p>
+    <section class="section" id="how">
+      <div class="wrap">
+        <p class="eyebrow">How it works</p>
+        <h2>From first email to a working setup</h2>
+        <p class="intro">Three steps, and you see the price before anything starts.</p>
+        <ol class="steps">
+          <li><strong>Tell us about your leads</strong>Send a short email about where your leads come from and the tools you use today.</li>
+          <li><strong>Get one written quote</strong>You get a quote that says what we will build, the price and the timeline.</li>
+          <li><strong>We build and hand it over</strong>We set it up on your own accounts, test it with you and hand it over working.</li>
+        </ol>
+      </div>
     </section>
 
-    <section class="block" id="refunds">
-      <h2>Refunds and cancellations</h2>
-      <h3>Setup work</h3>
-      <p>
-        If you cancel before we start building, your deposit is refunded in
-        full. Once the build has started, the deposit covers work already done
-        and is not refundable. If what we hand over does not do what the quote
-        described, we fix it at no charge, and if we cannot fix it, we refund
-        what you paid.
-      </p>
-      <h3>Monthly upkeep</h3>
-      <p>
-        Cancel at any time by email. You are not billed for any month after you
-        cancel. A month already paid is not refunded.
-      </p>
-      <h3>Templates</h3>
-      <p>
-        If a template does not import or does not work as described, email us
-        within 14 days of purchase and we will help you fix it or refund it in
-        full.
-      </p>
+    <section class="section section-soft">
+      <div class="wrap">
+        <div class="policy" id="payment">
+          <h2>How payment works</h2>
+          <div>
+            <p>
+              Setup work is paid in two parts. Half of the quoted price is due before
+              we start building, and the rest is due when the automation is handed
+              over and working. Monthly upkeep is billed each month. Templates are
+              paid once at checkout. All prices are in US dollars, and card payments
+              are processed by Stripe.
+            </p>
+          </div>
+        </div>
+
+        <div class="policy" id="refunds">
+          <h2>Refunds and cancellations</h2>
+          <div>
+            <h3>Setup work</h3>
+            <p>
+              If you cancel before we start building, your deposit is refunded in
+              full. Once the build has started, the deposit covers work already done
+              and is not refundable. If what we hand over does not do what the quote
+              described, we fix it at no charge, and if we cannot fix it, we refund
+              what you paid.
+            </p>
+            <h3>Monthly upkeep</h3>
+            <p>
+              Cancel at any time by email. You are not billed for any month after you
+              cancel. A month already paid is not refunded.
+            </p>
+            <h3>Templates</h3>
+            <p>
+              If a template does not import or does not work as described, email us
+              within 14 days of purchase and we will help you fix it or refund it in
+              full.
+            </p>
+          </div>
+        </div>
+
+        <div class="policy" id="terms">
+          <h2>Terms</h2>
+          <div>
+            <p>
+              Every setup project starts with a written quote that says what we will
+              build, the price, and the timeline. Work outside that quote is quoted
+              separately before we do it. Automations run on your own accounts, such
+              as your email, phone and Google tools, so you keep full ownership of
+              them and of your data. We only use your data to build and run what you
+              asked for, and we never sell it.
+            </p>
+            <p>
+              Privacy for the FitnessAI app is covered by its own
+              <a href="/fitnessai/#privacy">privacy policy</a>.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="block" id="terms">
-      <h2>Terms</h2>
-      <p>
-        Every setup project starts with a written quote that says what we will
-        build, the price, and the timeline. Work outside that quote is quoted
-        separately before we do it. Automations run on your own accounts, such
-        as your email, phone and Google tools, so you keep full ownership of
-        them and of your data. We only use your data to build and run what you
-        asked for, and we never sell it.
-      </p>
-      <p>
-        Privacy for the FitnessAI app is covered by its own
-        <a href="/fitnessai/#privacy">privacy policy</a>.
-      </p>
-    </section>
-
-    <section class="block" id="contact">
-      <h2>Contact</h2>
-      <p>
-        Questions, quotes and support all go to the same inbox, and a person
-        reads every message. Expect a reply within two business days.
-      </p>
-      <p class="contact-line">
-        <a href="mailto:munrosoftwarecompany@gmail.com">munrosoftwarecompany@gmail.com</a>
-      </p>
-      <p class="note">
-        Munro Software Company LLC, owned and run by Nathan Munro, Arizona, USA.
-      </p>
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="contact-card">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Talk to a person</h2>
+            <p>
+              Questions, quotes and support all go to the same inbox, and a person
+              reads every message. Expect a reply within two business days.
+            </p>
+            <p class="note">
+              Munro Software Company LLC, owned and run by Nathan Munro, Arizona, USA.
+            </p>
+          </div>
+          <div>
+            <p class="contact-line">
+              <a href="mailto:munrosoftwarecompany@gmail.com">munrosoftwarecompany@gmail.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2026 Munro Software Company LLC &middot; Arizona</p>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <p class="legal">Munro Software Company LLC</p>
+        <p>&copy; 2026 Munro Software Company LLC &middot; Arizona, USA</p>
+      </div>
+      <nav class="footer-links">
+        <a href="/lead-follow-up/">Lead follow-up</a>
+        <a href="/templates/">Templates</a>
+        <a href="/fitnessai/">FitnessAI</a>
+        <a href="#refunds">Refunds</a>
+        <a href="#terms">Terms</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </footer>
 </body>
 </html>
