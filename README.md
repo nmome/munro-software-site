@@ -15,6 +15,11 @@ The site for **Munro Software Company LLC** at
   `https://munrosoftwarecompany.com/templates/`. Copy comes from the brain
   notes `projects/money/template-listing.md` and `paid-template.md`. No price
   or buy link until the Gumroad listing is live: a comment marks the spot.
+- `journey/index.html`: **DRAFT, awaiting Nathan's wording approval.** The
+  journey page at `/journey/`, the only place the inward work (Jarvis,
+  trading, clipping) appears. Not linked from the homepage and marked
+  `noindex` until Nathan approves it. No balances, P&L, net worth, personal
+  life or day job on it.
 - `fitnessai/index.html`: the FitnessAI support and privacy page, for the
   App Store Connect URL fields:
 
