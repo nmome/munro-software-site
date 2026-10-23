@@ -20,6 +20,13 @@ The site for **Munro Software Company LLC** at
   trading, clipping) appears. Not linked from the homepage and marked
   `noindex` until Nathan approves it. No balances, P&L, net worth, personal
   life or day job on it.
+- `404.html`: the branded not-found page. Cloudflare Pages serves it for
+  any unknown path. It links the homepage, the three product pages and the
+  homepage contact section. Uses `styles.css` as is.
+- `sitemap.xml`: lists `/`, `/lead-follow-up/`, `/templates/` and
+  `/fitnessai/` for search engines. Add `/journey/` only once Nathan
+  approves its wording. There is no `robots.txt` here because Cloudflare
+  serves a managed one.
 - `fitnessai/index.html`: the FitnessAI support and privacy page, for the
   App Store Connect URL fields:
 
