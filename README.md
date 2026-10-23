@@ -6,6 +6,11 @@ The site for **Munro Software Company LLC** at
 - `index.html`: the business homepage (services, payment, refunds, terms,
   contact). Stripe verifies the business against this page, so the LLC name
   and what we sell must stay on it.
+- `lead-follow-up/index.html`: the lead follow-up service page, served at
+  `https://munrosoftwarecompany.com/lead-follow-up/`. Copy comes from the
+  brain note `projects/money/site-copy.md`. It names no price: the quote is
+  sized on the call. Showing "From $650" there is Nathan's call. Refund and
+  terms wording is not repeated, the page links to the homepage for it.
 - `fitnessai/index.html`: the FitnessAI support and privacy page, for the
   App Store Connect URL fields:
 
