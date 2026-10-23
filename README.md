@@ -1,16 +1,22 @@
 # munro-software-site
 
-Single-page marketing, support, and privacy site for **FitnessAI** at
-[munrosoftwarecompany.com](https://munrosoftwarecompany.com), built by Munro
-Software.
+The site for **Munro Software Company LLC** at
+[munrosoftwarecompany.com](https://munrosoftwarecompany.com).
 
-This page exists to satisfy the App Store Connect URL fields:
+- `index.html`: the business homepage (services, payment, refunds, terms,
+  contact). Stripe verifies the business against this page, so the LLC name
+  and what we sell must stay on it.
+- `fitnessai/index.html`: the FitnessAI support and privacy page, for the
+  App Store Connect URL fields:
 
 | App Store Connect field | URL |
 | --- | --- |
-| Marketing URL (optional) | `https://munrosoftwarecompany.com` |
-| Support URL (required) | `https://munrosoftwarecompany.com/#support` |
-| Privacy Policy URL (required) | `https://munrosoftwarecompany.com/#privacy` |
+| Marketing URL (optional) | `https://munrosoftwarecompany.com/fitnessai/` |
+| Support URL (required) | `https://munrosoftwarecompany.com/fitnessai/#support` |
+| Privacy Policy URL (required) | `https://munrosoftwarecompany.com/fitnessai/#privacy` |
+
+The old `/#support` and `/#privacy` links still work: a script on the
+homepage forwards them to `/fitnessai/`.
 
 Static HTML/CSS, no build step. Deployed to Cloudflare Pages on push to `main`.
 
@@ -44,9 +50,9 @@ with the "Built with Llama" attribution and a `NOTICE.txt`.
   health-management purpose (App Review 5.1.3). It must not go to iCloud.
 - **Confirm the FitnessAI name is available** in App Store Connect. There may be
   an existing iOS app using it.
-- **Cloudflare bot protection** currently challenges automated clients on this
-  zone (`Cf-Mitigated: challenge`). Fine for humans; consider allowlisting in
-  case Apple's review tooling fetches the Support URL.
+- **Cloudflare bot protection** was turned off on 2026-10-22, because its
+  challenge blocked Stripe's website check. Keep it off, or Stripe and Apple
+  review cannot fetch the site.
 
 ## Local preview
 
