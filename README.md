@@ -15,17 +15,16 @@ The site for **Munro Software Company LLC** at
   `https://munrosoftwarecompany.com/templates/`. Copy comes from the brain
   notes `projects/money/template-listing.md` and `paid-template.md`. No price
   or buy link until the Gumroad listing is live: a comment marks the spot.
-- `journey/index.html`: **DRAFT, awaiting Nathan's wording approval.** The
-  journey page at `/journey/`, the only place the inward work (Jarvis,
-  trading, clipping) appears. Not linked from the homepage and marked
-  `noindex` until Nathan approves it. No balances, P&L, net worth, personal
-  life or day job on it.
+- `journey/index.html`: the journey page at `/journey/`, the only place the
+  inward work (Jarvis, trading, clipping) appears. Published with Nathan's
+  approved wording (2026-10-26), indexed, and linked from the homepage
+  footer. Any wording change waits for him. No balances, P&L, net worth,
+  personal life or day job on it.
 - `404.html`: the branded not-found page. Cloudflare Pages serves it for
   any unknown path. It links the homepage, the three product pages and the
   homepage contact section. Uses `styles.css` as is.
-- `sitemap.xml`: lists `/`, `/lead-follow-up/`, `/templates/` and
-  `/fitnessai/` for search engines. Add `/journey/` only once Nathan
-  approves its wording. There is no `robots.txt` here because Cloudflare
+- `sitemap.xml`: lists `/`, `/lead-follow-up/`, `/templates/`,
+  `/fitnessai/` and `/journey/` for search engines. There is no `robots.txt` here because Cloudflare
   serves a managed one.
 - `fitnessai/index.html`: the FitnessAI support and privacy page, for the
   App Store Connect URL fields:
