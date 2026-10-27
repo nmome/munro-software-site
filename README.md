@@ -20,11 +20,17 @@ The site for **Munro Software Company LLC** at
   approved wording (2026-10-26), indexed, and linked from the homepage
   footer. Any wording change waits for him. No balances, P&L, net worth,
   personal life or day job on it.
+- `privacy/index.html`: the business site privacy policy at `/privacy/`,
+  written to cover CalOPPA (Cal. Bus. & Prof. Code 22575): what we collect,
+  who it is shared with (email provider, Stripe, Cloudflare), how changes are
+  announced, the effective date and the Do Not Track answer. Linked from
+  every page footer. FitnessAI keeps its own policy at `/fitnessai/#privacy`.
+  If a new provider or form is added to the site, this page changes with it.
 - `404.html`: the branded not-found page. Cloudflare Pages serves it for
   any unknown path. It links the homepage, the three product pages and the
   homepage contact section. Uses `styles.css` as is.
 - `sitemap.xml`: lists `/`, `/lead-follow-up/`, `/templates/`,
-  `/fitnessai/` and `/journey/` for search engines. There is no `robots.txt` here because Cloudflare
+  `/fitnessai/`, `/journey/` and `/privacy/` for search engines. There is no `robots.txt` here because Cloudflare
   serves a managed one.
 - `fitnessai/index.html`: the FitnessAI support and privacy page, for the
   App Store Connect URL fields:
