@@ -351,7 +351,7 @@ main > .block {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
 
@@ -557,7 +557,6 @@ details strong { color: var(--ink); }
 /* Tablet */
 
 @media (max-width: 960px) {
-  .cards { grid-template-columns: repeat(2, 1fr); }
   .home-hero h1 { font-size: 48px; }
   .policy { grid-template-columns: 1fr; gap: 16px; }
   .contact-card { grid-template-columns: 1fr; gap: 24px; padding: 36px; }
