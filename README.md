@@ -22,7 +22,7 @@ The site for **Munro Software Company LLC** at
   personal life or day job on it.
 - `privacy/index.html`: the business site privacy policy at `/privacy/`,
   written to cover CalOPPA (Cal. Bus. & Prof. Code 22575): what we collect,
-  who it is shared with (email provider, Stripe, Cloudflare), how changes are
+  who it is shared with (email provider, Gumroad, Stripe, Cloudflare), how changes are
   announced, the effective date and the Do Not Track answer. Linked from
   every page footer. FitnessAI keeps its own policy at `/fitnessai/#privacy`.
   If a new provider or form is added to the site, this page changes with it.
