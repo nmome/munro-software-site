@@ -398,6 +398,8 @@ main > .block {
   text-decoration: none;
 }
 
+.card .more + .more { margin-top: 0; }
+
 .card .more:hover { text-decoration: underline; }
 
 .steps {

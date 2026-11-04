@@ -13,8 +13,11 @@ The site for **Munro Software Company LLC** at
   terms wording is not repeated, the page links to the homepage for it.
 - `templates/index.html`: the Lead Catch template page, served at
   `https://munrosoftwarecompany.com/templates/`. Copy comes from the brain
-  notes `projects/money/template-listing.md` and `paid-template.md`. No price
-  or buy link until the Gumroad listing is live: a comment marks the spot.
+  notes `projects/money/template-listing.md` and `paid-template.md`. Lead Catch
+  is on sale for n8n at $39 on Gumroad
+  (`https://munrosoft.gumroad.com/l/lead-catch`), linked here and from the
+  homepage card. Lead Catch Follow-ups is not on sale yet and Make is coming
+  later.
 - `journey/index.html`: the journey page at `/journey/`, the only place the
   inward work (Jarvis, trading, clipping) appears. Published with Nathan's
   approved wording (2026-10-26), indexed, and linked from the homepage
