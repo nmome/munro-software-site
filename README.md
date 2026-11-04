@@ -32,12 +32,15 @@ The site for **Munro Software Company LLC** at
 - `404.html`: the branded not-found page. Cloudflare Pages serves it for
   any unknown path. It links the homepage, the three product pages and the
   homepage contact section. Uses `styles.css` as is.
+- `clips/index.html`: describes the clipping posting app at `/clips/`, with
+  both policy links in the page body, for TikTok's app review. Not linked from
+  the homepage.
 - `clips/privacy/index.html` and `clips/terms/index.html`: the privacy policy
   and terms for the clipping posting app, at `/clips/privacy/` and
   `/clips/terms/`, the pages TikTok's app review and YouTube's audit form ask
   for.
 - `sitemap.xml`: lists `/`, `/lead-follow-up/`, `/templates/`,
-  `/fitnessai/`, `/journey/`, `/privacy/`, `/clips/privacy/` and
+  `/fitnessai/`, `/journey/`, `/privacy/`, `/clips/`, `/clips/privacy/` and
   `/clips/terms/` for search engines. There is no `robots.txt` here because
   Cloudflare serves a managed one.
 - `_redirects`: Cloudflare Pages redirect rules. Pages publishes the whole repo,
