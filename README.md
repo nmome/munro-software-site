@@ -32,9 +32,19 @@ The site for **Munro Software Company LLC** at
 - `404.html`: the branded not-found page. Cloudflare Pages serves it for
   any unknown path. It links the homepage, the three product pages and the
   homepage contact section. Uses `styles.css` as is.
+- `clips/privacy/index.html` and `clips/terms/index.html`: the privacy policy
+  and terms for the clipping posting app, at `/clips/privacy/` and
+  `/clips/terms/`, the pages TikTok's app review and YouTube's audit form ask
+  for.
 - `sitemap.xml`: lists `/`, `/lead-follow-up/`, `/templates/`,
-  `/fitnessai/`, `/journey/` and `/privacy/` for search engines. There is no `robots.txt` here because Cloudflare
-  serves a managed one.
+  `/fitnessai/`, `/journey/`, `/privacy/`, `/clips/privacy/` and
+  `/clips/terms/` for search engines. There is no `robots.txt` here because
+  Cloudflare serves a managed one.
+- `_redirects`: Cloudflare Pages redirect rules. Pages publishes the whole repo,
+  so this sends `/README.md` and `/.gitignore` to `/` with a 301 to keep those
+  files from being served publicly. Cloudflare follows these rules whether or
+  not a file matches, and does not serve `_redirects` itself. Any other
+  repo-only file added at a public path needs a rule here too.
 - `fitnessai/index.html`: the FitnessAI support and privacy page, for the
   App Store Connect URL fields:
 
