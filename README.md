@@ -33,8 +33,8 @@ The site for **Munro Software Company LLC** at
   any unknown path. It links the homepage, the three product pages and the
   homepage contact section. Uses `styles.css` as is.
 - `clips/index.html`: describes the clipping posting app at `/clips/`, with
-  both policy links in the page body, for TikTok's app review. Not linked from
-  the homepage.
+  both policy links in the page body, for TikTok's app review. Linked from the
+  homepage footer.
 - `clips/privacy/index.html` and `clips/terms/index.html`: the privacy policy
   and terms for the clipping posting app, at `/clips/privacy/` and
   `/clips/terms/`, the pages TikTok's app review and YouTube's audit form ask
